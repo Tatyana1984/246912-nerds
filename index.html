@@ -27,49 +27,78 @@
           </ul>
         </nav>
         <div class="user">
-          <a class="basket" href="#">Корзина</a>
+          <a class="user-basket" href="#">Корзина</a>
         </div>
       </div>
     </header>
     <main class="container">
-      <div class="slider">
-        <div class="benefits">
-          <h1>Долго, дорого, скурпулезно</h1>
-          <p class="about">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <a class="more" href="#">Узнать больше</a>
-        </div>
-        <img src="http://placehold.it/150x100" alt="">
+      <div class="first-section">
+        <form action="#" method="get">
+          <div class="slider">
+            <input type="radio" name="point" id="slide-1" checked>
+            <label for="slide-1"></label>
+            <div class="first-slide">
+              <div class="feature">
+                <div class="feature-title">
+                  <h1>Долго, дорого, скурпулезно</h1>
+                  <p class="about">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                </div>
+                <div class= "info">
+                  <a class="info-btn" href="#">Узнать больше</a>
+                </div>
+              </div>
+              <div class="title-image">
+                <img src="http://placehold.it/150x100" alt="">
+              </div>
+            </div>
+            <input type="radio" name="point" id="slide-2">
+            <label for="slide-2"></label>
+            <div class="second-slide">
+            </div>
+            <input type="radio" name="point" id="slide-3">
+            <label for="slide-3"></label>
+            <div class="third-slide">
+            </div>
+          </div>
+        </form>
       </div>
-      <div class="products">
+      <div class="second-section">
         <div class="websites">
-          <div class="red">
+          <div class="red-image">
             <img src="http://placehold.it/150x100" alt="">
           </div>
-          <p class="name">Вэб-сайты</p>
-          <p class="about">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a class="order" href="#">Заказать</a>
+          <div class="websites-item">
+            <p class="name">Вэб-сайты</p>
+            <p class="about">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a class="order" href="#">Заказать</a>
+          </div>
         </div>
         <div class="apps">
-          <div class="green">
+          <div class="green-image">
             <img src="http://placehold.it/150x100" alt="">
           </div>
-          <p class="name">Приложения</p>
-          <p class="about">Покорите топ-10 приложений в Appstore и Google play</p>
-          <a class="order" href="#">Заказать</a>
+          <div class="apps-item">
+            <p class="name">Приложения</p>
+            <p class="about">Покорите топ-10 приложений в Appstore и Google play</p>
+            <a class="order" href="#">Заказать</a>
+          </div>
         </div>
         <div class="presentations">
           <div class="yellow">
             <img src="http://placehold.it/150x100" alt="">
           </div>
-          <p class="name">Презентации</p>
-          <p class="about">Вы даже не подозреваете, насколко вы изумительны!</p>
-          <a class="order" href="#">Заказать</a>
+          <div class="presentations-item">
+            <p class="name">Презентации</p>
+            <p class="about">Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a class="order" href="#">Заказать</a>
+          </div>
         </div>
       </div>
-      <div class="body">
-        <div class="content-left">
+      <div class="third-section">
+        <div class="left-content">
           <h2>Мы маленькая, но гордая дизайн студия из Краснодара.</h2>
-          <p class="about">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем непокладая рук,как роботы.</p>
+          <p class="about">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива.
+            Работаем непокладая рук,как роботы.</p>
           <p class="list">Выполняем заказы на разработку:</p>
           <ul class="item">
             <li>Вэб-сайтов любой сложности</li>
@@ -77,41 +106,69 @@
             <li>Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </div>
-        <div class="content-right">
+        <div class="right-content">
           <div class="logo-2">
             <img src="http://placehold.it/150x100" alt="Логотип Нёрдс">
           </div>
-          <div class="box-1">
-            <p class="list">C 2004 года любим точность во всем</p>
-            <div class="box-2">
-              <p class="rate">146 %</p>
-              <p class="about">Уровень самоотдачи</p>
+          <span class="box-title">C 2004 года любим точность во всем</span>
+          <div class="joint-box">
+            <div class="box-1">
+              <span class="rate">146 %</span>
+              <span class="facts">Уровень самоотдачи</span>
             </div>
             <div class="box-2">
-              <p class="rate">100 %</p>
-              <p class="about">Соблюдение сроков</p>
+              <span class="rate">100 %</span>
+              <span class="facts">Соблюдение сроков</span>
             </div>
-            <div class="box-2">
-              <p class="rate">50 %</p>
-              <p class="about">Минимальная предоплата</p>
+            <div class="box-3">
+              <span class="rate">50 %</span>
+              <span class="facts">Минимальная предоплата</span>
             </div>
           </div>
         </div>
       </div>
-      <div class="works">
-        <a class="btn-htmlacademy" href="#">
-          <img src="http://placehold.it/150x100" alt="">
-        </a>
-        <a class="btn-barbershop" href="#">
-          <img src="http://placehold.it/150x100" alt="">
-        </a>
-        <a class="btn-pink" href="#">
-          <img src="http://placehold.it/150x100" alt="">
-        </a>
-        <a class="btn-mishka" href="#">
-          <img src="http://placehold.it/150x100" alt="">
-        </a>
+      <div class="fourth-section">
+        <div class="htmlacademy">
+          <a class="btn-htmlacademy" href="#">
+            <img src="http://placehold.it/150x100" alt="">
+          </a>
+        </div>
+        <div class="barbershop">
+          <a class="btn-barbershop" href="#">
+            <img src="http://placehold.it/150x100" alt="">
+          </a>
+        </div>
+        <div class="pink">
+          <a class="btn-pink" href="#">
+            <img src="http://placehold.it/150x100" alt="">
+          </a>
+        </div>
+        <div class="mishka">
+          <a class="btn-mishka" href="#">
+            <img src="http://placehold.it/150x100" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="fifth-section">
+        <div class="contacts">
+          <p class="contacts-title">Nёrds design studio</p>
+          <p class="address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+             тел. +7 (812)275-75-75</p>
+        </div>
       </div>
     </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="social-1">
+          <a class="social-1-vk" href="#">Вконтакте</a>
+          <a class="social-1-fb" href="#">Фейсбук</a>
+          <a class="social-1-inst" href="#">Инстаграм</a>
+        </div>
+        <div class="social-2">
+          <p class="social-2-slogan">Давайте дружить,это выгодно!</p>
+          <p class="social-2-desc">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
