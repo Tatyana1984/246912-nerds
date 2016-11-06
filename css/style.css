@@ -20,3 +20,461 @@ h2 {
   font-family: "Roboto";
   text-transform: uppercase;
 }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.header {
+  min-height: 115px;
+  outline: 1px solid blue;
+}
+
+.container {
+  width: 1160px;
+  padding: 0 20px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+
+.logo-1 {
+  float: left;
+  margin-right: 200px;
+  width: 160px;
+  outline: 1px solid blue;
+}
+
+.navigation {
+  float: left;
+  width: 620px;
+  outline: 1px solid blue;
+}
+
+.user {
+  float: right;
+  width: 160px;
+  outline: 1px solid blue;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.navigation li {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 30px;
+  vertical-align: top;
+  margin-right: 50px;
+  text-transform: uppercase;
+}
+
+.navigation a {
+  display: block;
+  padding-top: 85px;
+  text-decoration: none;
+  outline: 1px solid red;
+}
+
+.user-basket {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 85px;
+  padding-left: 86px;
+  font-size: 16px;
+  line-height: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.logo-1 img {
+  display: block;
+  padding-top: 50px;
+}
+
+.first-section {
+  margin-bottom: 80px;
+}
+
+.feature {
+  float: left;
+  width: 380px;
+}
+
+.title-image {
+  float: right;
+  width: 760px;
+}
+
+.feature-title {
+  margin-bottom: 45px;
+}
+
+.info-btn {
+  display: inline-block;
+  padding: 16px 54px;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: 1px solid blue;
+}
+
+.unit {
+  float: left;
+  width: 300px;
+  margin-right: 100px;
+  padding-bottom: 80px;
+  outline: 1px solid red;
+}
+
+.unit:last-child {
+  margin-right: 60px;
+}
+
+.unit-image {
+  margin-bottom: 25px;
+}
+
+.order {
+  display: inline-block;
+  padding: 16px 40px;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: 1px solid blue;
+}
+
+.third-section {
+  margin-top: 40px;
+  margin-bottom: 78px;
+  outline: 1px solid blue;
+}
+
+.left-content {
+  float: left;
+  width: 660px;
+  padding-top: 37px;
+  outline: 1px solid blue;
+}
+
+b {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.right-content {
+  float: right;
+  width: 360px;
+  outline: 1px solid blue;
+}
+
+.logo-2 {
+  margin-bottom: 37px;
+  outline: 1px solid blue;
+}
+
+.box-title {
+  display: block;
+  text-align: center;
+  outline: 1px solid blue;
+}
+.box {
+  float: left;
+  width: 110px;
+  margin-right: 10px;
+  margin-top: 45px;
+  outline: 1px solid blue;
+}
+
+.rate {
+  display: block;
+  font-size: 45px;
+  margin-bottom: 25px;
+  outline: 1px solid blue;
+}
+
+.facts {
+  display: block;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.fourth-section {
+  margin-bottom: 80px;
+  padding: 2px 0;
+  outline: 1px solid blue;
+}
+
+.btn-htmlacademy {
+  display: block;
+  float: left;
+  margin-right: 40px;
+  padding: 56px 30px;
+  outline: 1px solid blue;
+}
+
+.btn-barbershop {
+  display: block;
+  float: left;
+  margin-right: 40px;
+  padding: 46px 26px;
+  outline: 1px solid blue;
+}
+
+.btn-pink {
+  display: block;
+  float: left;
+  margin-right: 40px;
+  padding: 63px 38px;
+  outline: 1px solid blue;
+}
+
+.btn-mishka {
+  display: block;
+  float: left;
+  padding: 47px 43px;
+  outline: 1px solid blue;
+}
+
+.bottom-section {
+  position: relative;
+  height: 460px;
+  outline: 1px solid blue;
+}
+
+.map {
+  width: 1440px
+  height: 460px;
+  transform: translateX(-140px);
+}
+
+.contacts {
+  position: absolute;
+  top: 55px;
+  padding: 47px 50px;
+  background-color: #ffffff;
+}
+
+.name {
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.adress,
+.phone {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.write {
+  display: inline-block;
+  padding: 16px 45px;
+  margin-top: 35px;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: 1px solid blue;
+}
+
+.logo-3 {
+  position: absolute;
+  top: 90px;
+  left: 680px;
+  outline: 1px solid blue;
+}
+
+.top-section {
+  padding: 80px 0;
+  text-align: center;
+  margin-bottom: 60px;
+  outline: 1px solid blue;
+}
+
+.left-section {
+  float: left;
+  width: 260px;
+  outline: 1px solid blue;
+}
+
+.right-section {
+  float: right;
+  width: 760px;
+  outline: 1px solid blue;
+}
+
+.purchace h2 {
+  display: inline-block;
+  line-height: 18px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.roll {
+  margin-bottom: 15px;
+}
+
+.price-1 {
+  float: left;
+  width: 115px;
+}
+
+.price-2 {
+  float: right;
+  width: 116px;
+}
+
+.under {
+  display: inline-block;
+  margin-right: 12px;
+  padding: 9px 0;
+  line-height: 22px;
+}
+
+.value {
+  display: inline-block;
+  width: 80px ;
+  padding: 9px 0;
+  line-height: 22px;
+  text-align: center;
+  outline: 1px solid blue;
+}
+
+.sort-box {
+  float: right;
+  width: 360px;
+}
+
+.sorting h2 {
+  display: inline-block;
+  line-height: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.sorting {
+  margin-bottom: 50px;
+  outline: 1px solid blue;
+}
+
+.sort-box ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.sort-box li {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 18px;
+  margin-right: 25px;
+  vertical-align: top;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: 1px solid blue;
+}
+
+.sort-box a {
+  display: block;
+  text-decoration: none;
+}
+
+.sample {
+  position: relative;
+  float: left;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  outline: 1px solid blue;
+}
+
+.sample:nth-child(2n) {
+  margin-right: 0;
+}
+
+.sample-info {
+  position: absolute;
+  top: 344px;
+  text-align: center;
+  background-color: #eeeeee;
+}
+
+.sample-info a {
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  text-decoration: none;
+}
+
+.info {
+  display: block;
+  line-height: 18px;
+  margin: 0 70px;
+}
+
+.bay a {
+  display: inline-block;
+  padding: 16px 60px;
+  margin-top: 30px;
+  margin-bottom: 43px;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: 1px solid blue;
+}
+.pages ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.pages li {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 18px;
+  padding-right: 10px;
+}
+
+.pages a {
+  display: block;
+  padding: 16px 22px;
+  text-decoration: none;
+  outline: 1px solid blue;
+}
+
+ a.next {
+  padding: 16px 80px;
+}
+
+.joint-section {
+  margin-bottom: 80px;
+}
+
+.footer {
+  padding: 70px 0;
+  outline: 1px solid blue;
+}
+
+.social-1 {
+  float: left;
+  width: 260px;
+  margin-right: 140px;
+}
+
+.social-2 {
+  float: left;
+  width: 560px;
+}

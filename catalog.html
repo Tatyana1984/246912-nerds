@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container clearfix">
         <div class="logo-1">
           <img src="img/logo-1.png" width="160" height="64" alt="Логотип Нёрдс">
         </div>
@@ -31,12 +31,12 @@
           <a class="user-basket" href="#">Корзина</a>
         </div>
       </div>
-    </header>
-    <main class="container">
       <div class="top-section">
         <h1>Магазин готовых шаблонов</h1>
       </div>
-      <div class="joint-section">
+    </header>
+    <main class="container">
+      <div class="joint-section clearfix">
         <div class="left-section">
           <div class="purchace">
             <h2>стоимость:</h2>
@@ -44,13 +44,15 @@
               <input type="range" min="0" max="15000" value="0">
               <input type="range" min="0" max="15000" value="10000">
             </div>
-            <div class="price-1">
-              <span class="under">от</span>
-              <div class="under-value">0</div>
-            </div>
-            <div class="price-2">
-              <span class="over">до</span>
-              <div class="over-value">15000</div>
+            <div class="price clearfix">
+              <div class="price-1">
+                <span class="under">от</span>
+                <span class="value">0</span>
+              </div>
+              <div class="price-2">
+                <span class="under">до</span>
+                <span class="value">15000</span>
+              </div>
             </div>
           </div>
           <aside>
@@ -102,10 +104,10 @@
           </aside>
         </div>
         <div class="right-section">
-          <div class="sorting">
+          <div class="sorting clearfix">
             <h2>сортировать</h2>
             <div class="sort-box">
-              <ul class="sort-group">
+              <ul>
                 <li>
                   <a href="#">по цене</a>
                 </li>
@@ -120,12 +122,12 @@
               <span class="up"></span>
             </div>
           </div>
-          <div class="samples">
-            <div class="sample-1">
+          <div class="samples clearfix">
+            <div class="sample">
               <div class="sedona-img">
                 <img src="img/sedona-img.jpg" width="360" height="576" alt="">
               </div>
-              <div class="sedona-info">
+              <div class="sample-info">
                 <a href="#">
                   <h2>sedona</h2>
                 </a>
@@ -135,39 +137,11 @@
                 </span>
               </div>
             </div>
-            <div class="sample-2">
-              <div class="barbershop-img">
-                <img src="img/barbershop-img.jpg" width="360" height="576" alt="">
-              </div>
-              <div class="barbershop-info">
-                <a href="#">
-                  <h2>barbershop</h2>
-                </a>
-                <span class="info">Сайт салоны красоты. для мужчин, да.</span>
-                <span class="bay">
-                  <a href="#">9900 руб.</a>
-                </span>
-              </div>
-            </div>
-            <div class="sample-3">
-              <div class="aplus-img">
-                <img src="img/aplus-img.jpg" width="360" height="576" alt="">
-              </div>
-              <div class="aplus-info">
-                <a href="#">
-                  <h2>a plus</h2>
-                </a>
-                <span class="info">Лендинг курсов повышения квалификации</span>
-                <span class="bay">
-                  <a href="#">9900 руб.</a>
-                </span>
-              </div>
-            </div>
-            <div class="sample-4">
+            <div class="sample">
               <div class="pinkapp-img">
                 <img src="img/pink-img.jpg" width="360" height="576" alt="">
               </div>
-              <div class="pinkapp-info">
+              <div class="sample-info">
                 <a href="#">
                   <h2>pink app</h2>
                 </a>
@@ -177,11 +151,25 @@
                 </span>
               </div>
             </div>
-            <div class="sample-5">
+            <div class="sample">
+              <div class="barbershop-img">
+                <img src="img/barbershop-img.jpg" width="360" height="576" alt="">
+              </div>
+              <div class="sample-info">
+                <a href="#">
+                  <h2>barbershop</h2>
+                </a>
+                <span class="info">Сайт салоны красоты. для мужчин, да.</span>
+                <span class="bay">
+                  <a href="#">9900 руб.</a>
+                </span>
+              </div>
+            </div>
+            <div class="sample">
               <div class="mishka-img">
                 <img src="img/mishka-img.jpg" width="360" height="576" alt="">
               </div>
-              <div class="mishka-info">
+              <div class="sample-info">
                 <a href="#">
                   <h2>mishka</h2>
                 </a>
@@ -191,11 +179,25 @@
                 </span>
               </div>
             </div>
-            <div class="sample-6">
+            <div class="sample">
+              <div class="aplus-img">
+                <img src="img/aplus-img.jpg" width="360" height="576" alt="">
+              </div>
+              <div class="sample-info">
+                <a href="#">
+                  <h2>a plus</h2>
+                </a>
+                <span class="info">Лендинг курсов повышения квалификации</span>
+                <span class="bay">
+                  <a href="#">9900 руб.</a>
+                </span>
+              </div>
+            </div>
+            <div class="sample">
               <div class="kvast-img">
                 <img src="img/kvast-img.jpg" width="360" height="576" alt="">
               </div>
-              <div class="kvast-info">
+              <div class="sample-info">
                 <a href="#">
                   <h2>кваст</h2>
                 </a>
@@ -207,18 +209,20 @@
             </div>
           </div>
           <div class="pages">
-            <span class="page-1">
-              <a href="#">1</a>
-            </span>
-            <span class="page-2">
-              <a href="#">2</a>
-            </span>
-            <span class="page-3">
-              <a href="#">3</a>
-            </span>
-            <span class="next">
-              <a href="#">следующая</a>
-            </span>
+            <ul>
+              <li>
+                <a href="#">1</a>
+              </li>
+              <li>
+                <a href="#">2</a>
+              </li>
+              <li>
+                <a href="#">3</a>
+              </li>
+              <li>
+                <a class="next" href="#">следующая</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -228,9 +232,9 @@
         </div>
         <div class="contacts">
           <p class="name">Nёrds design studio</p>
-          <p class="address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-            тел. +7 (812)275-75-75
-          </p>
+          <p class="address">191186, Санкт-Петербург,<br>
+             ул. Б. Конюшенная, д. 19/8</p>
+          <p class="phone">тел. +7 (812)275-75-75</p>
           <span class="write">
             <a href="#">Напишите нам</a>
           </span>
@@ -241,7 +245,7 @@
       </div>
     </main>
     <footer class="footer">
-      <div class="container">
+      <div class="container clearfix">
         <div class="social-1">
           <a class="social-1-vk" href="#">Вконтакте</a>
           <a class="social-1-fb" href="#">Фейсбук</a>
