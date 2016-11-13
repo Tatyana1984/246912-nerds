@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
       <div class="container clearfix">
         <div class="logo-1">
-          <img src="img/logo-1.png" width="160" height="64" alt="Логотип Нёрдс">
+          <a href="#"><img src="img/logo-1.png" width="160" height="64" alt="Логотип Нёрдс"></a>
         </div>
         <nav class="navigation">
           <ul>
@@ -19,7 +20,7 @@
             <li>
               <a href="#">Клиенты</a>
             </li>
-            <li>
+            <li class="active">
               <a href="#">Магазин</a>
             </li>
             <li>
@@ -28,7 +29,7 @@
           </ul>
         </nav>
         <div class="user">
-          <a class="user-basket" href="#">Корзина</a>
+          <a class="active" href="#">Корзина</a>
         </div>
       </div>
       <div class="top-section">
@@ -39,63 +40,79 @@
       <div class="joint-section clearfix">
         <div class="left-section">
           <div class="purchace">
-            <h2>стоимость:</h2>
-            <div class="roll">
-              <input type="range" min="0" max="15000" value="0">
-              <input type="range" min="0" max="15000" value="10000">
-            </div>
-            <div class="price clearfix">
-              <div class="price-1">
-                <span class="under">от</span>
-                <span class="value">0</span>
+            <form action="#" method="get">
+              <h2>стоимость:</h2>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                  <label class="max-price">до <input name="max-price" type="text" value="15 000"></label>
+                </div>
               </div>
-              <div class="price-2">
-                <span class="under">до</span>
-                <span class="value">15000</span>
-              </div>
-            </div>
+            </form>
           </div>
           <aside>
             <form action="#" method="get">
+              <h2>сетка:</h2>
               <div class="attribute-1">
-                <h2>сетка:</h2>
                 <ul>
                   <li>
                     <input type="checkbox" name="first-kind" id="first-kind-field" checked>
-                    <label for="first-kind-field">адаптивная</label>
+                    <label for="first-kind-field">Адаптивная</label>
                   </li>
                   <li>
                     <input type="checkbox" name="second-kind" id="second-kind-field">
-                    <label for="second-kind-field">фиксированная</label>
+                    <label for="second-kind-field">Фиксированная</label>
                   </li>
                   <li>
                     <input type="checkbox" name="third-kind" id="third-kind-field">
-                    <label for="third-kind-field">резиновая</label>
+                    <label for="third-kind-field">Резиновая</label>
                   </li>
                 </ul>
               </div>
+              <h2>особенности:</h2>
               <div class="attribute-2">
-                <h2>особенности:</h2>
                 <ul>
                   <li>
-                    <input type="checkbox" name="first-thing" id="first-thing-field" checked>
-                    <label for="first-thing-field">слайдер</label>
+                    <label class="label" for="first-thing-field">
+                      <input type="checkbox" name="first-thing" id="first-thing-field" checked>
+                      <span class="check"></span>
+                      Слайдер
+                    </label>
                   </li>
                   <li>
-                    <input type="checkbox" name="second-thing" id="second-thing-field">
-                    <label for="second-thing-field">блок преимуществ</label>
+                    <label class="label" for="second-thing-field">
+                      <input type="checkbox" name="second-thing" id="second-thing-field">
+                      <span class="check"></span>
+                      Блок преимуществ
+                    </label>
                   </li>
                   <li>
-                    <input type="checkbox" name="third-thing" id="third-thing-field" checked>
-                    <label for="third-thing-field">новости</label>
+                    <label class="label" for="third-thing-field">
+                      <input type="checkbox" name="third-thing" id="third-thing-field" checked>
+                      <span class="check"></span>
+                      Новости
+                    </label>
                   </li>
                   <li>
-                    <input type="checkbox" name="fourth-thing" id="fourth-thing-field">
-                    <label for="fourth-thing-field">галерея</label>
+                    <label class="label" for="fourth-thing-field">
+                      <input type="checkbox" name="fourth-thing" id="fourth-thing-field">
+                      <span class="check"></span>
+                      Галерея
+                    </label>
                   </li>
                   <li>
-                    <input type="checkbox" name="fifth-thing" id="fifth-thing-field">
-                    <label for="fifth-thing-field">корзина</label>
+                    <label class="label" for="fifth-thing-field">
+                      <input type="checkbox" name="fifth-thing" id="fifth-thing-field">
+                      Корзина
+                      <span class="check"></span>
+                    </label>
                   </li>
                 </ul>
               </div>
@@ -105,11 +122,11 @@
         </div>
         <div class="right-section">
           <div class="sorting clearfix">
-            <h2>сортировать</h2>
+            <h2>сортировать:</h2>
             <div class="sort-box">
               <ul>
                 <li>
-                  <a href="#">по цене</a>
+                  <a class="active" href="#">по цене</a>
                 </li>
                 <li>
                   <a href="#">по типу</a>
@@ -117,9 +134,13 @@
                 <li>
                   <a href="#">по названию</a>
                 </li>
+                <li>
+                  <a class="down active-2" href="#"></a>
+                </li>
+                <li>
+                  <a class="up" href="#"></a>
+                </li>
               </ul>
-              <span class="down"></span>
-              <span class="up"></span>
             </div>
           </div>
           <div class="samples clearfix">
@@ -131,9 +152,9 @@
                 <a href="#">
                   <h2>sedona</h2>
                 </a>
-                <span class="info">Информационный сайт для туристов</span>
+                <span class="info">Информационный сайт<br> для туристов</span>
                 <span class="bay">
-                  <a href="#">9900 руб.</a>
+                  <a href="#">9 900 руб.</a>
                 </span>
               </div>
             </div>
@@ -147,7 +168,7 @@
                 </a>
                 <span class="info">Продуктовый лендинг приложения для iOS Android</span>
                 <span class="bay">
-                  <a href="#">9900 руб.</a>
+                  <a href="#">9 900 руб.</a>
                 </span>
               </div>
             </div>
@@ -159,9 +180,9 @@
                 <a href="#">
                   <h2>barbershop</h2>
                 </a>
-                <span class="info">Сайт салоны красоты. для мужчин, да.</span>
+                <span class="info">Сайт салоны красоты.<br> Для мужчин, да.</span>
                 <span class="bay">
-                  <a href="#">9900 руб.</a>
+                  <a href="#">9 900 руб.</a>
                 </span>
               </div>
             </div>
@@ -173,9 +194,9 @@
                 <a href="#">
                   <h2>mishka</h2>
                 </a>
-                <span class="info">Интернет-магазин вязаных игрушек</span>
+                <span class="info">Интернет-магазин<br> вязаных игрушек</span>
                 <span class="bay">
-                  <a href="#">9900 руб.</a>
+                  <a href="#">9 900 руб.</a>
                 </span>
               </div>
             </div>
@@ -189,7 +210,7 @@
                 </a>
                 <span class="info">Лендинг курсов повышения квалификации</span>
                 <span class="bay">
-                  <a href="#">9900 руб.</a>
+                  <a href="#">9 900 руб.</a>
                 </span>
               </div>
             </div>
@@ -203,7 +224,7 @@
                 </a>
                 <span class="info">Промо сайт производителя картофельного кваса</span>
                 <span class="bay">
-                  <a href="#">9900 руб.</a>
+                  <a href="#">9 900 руб.</a>
                 </span>
               </div>
             </div>
@@ -211,7 +232,7 @@
           <div class="pages">
             <ul>
               <li>
-                <a href="#">1</a>
+                <a class="active" href="#">1</a>
               </li>
               <li>
                 <a href="#">2</a>
@@ -228,10 +249,10 @@
       </div>
       <div class="bottom-section">
         <div class="map">
-          <img src="img/map.jpg" width="1440" height="460" alt="">
+          <img src="img/map.jpg" width="1440" height="415" alt="">
         </div>
         <div class="contacts">
-          <p class="name">Nёrds design studio</p>
+          <p class="title">Nёrds design studio</p>
           <p class="address">191186, Санкт-Петербург,<br>
              ул. Б. Конюшенная, д. 19/8</p>
           <p class="phone">тел. +7 (812)275-75-75</p>
@@ -247,9 +268,9 @@
     <footer class="footer">
       <div class="container clearfix">
         <div class="social-1">
-          <a class="social-1-vk" href="#">Вконтакте</a>
-          <a class="social-1-fb" href="#">Фейсбук</a>
-          <a class="social-1-inst" href="#">Инстаграм</a>
+          <a class="social-btn social-1-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-1-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-1-inst" href="#">Инстаграм</a>
         </div>
         <div class="social-2">
           <p class="social-2-slogan">Давайте дружить,это выгодно!</p>
