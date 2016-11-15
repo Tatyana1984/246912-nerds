@@ -67,7 +67,7 @@
                     <label for="first-kind-field">Адаптивная</label>
                   </li>
                   <li>
-                    <input type="checkbox" name="second-kind" id="second-kind-field">
+                    <input type="checkbox" name="second-kind" id="second-kind-field" disabled>
                     <label for="second-kind-field">Фиксированная</label>
                   </li>
                   <li>
@@ -88,7 +88,7 @@
                   </li>
                   <li>
                     <label class="label" for="second-thing-field">
-                      <input type="checkbox" name="second-thing" id="second-thing-field">
+                      <input type="checkbox" name="second-thing" id="second-thing-field" disabled>
                       <span class="check"></span>
                       Блок преимуществ
                     </label>
@@ -116,13 +116,15 @@
                   </li>
                 </ul>
               </div>
-              <button class="show" type="submit">показать</button>
+              <button class="btn show" type="submit">показать</button>
             </form>
           </aside>
         </div>
         <div class="right-section">
           <div class="sorting clearfix">
-            <h2>сортировать:</h2>
+            <div class="sort-box-1">
+              <h2>сортировать:</h2>
+            </div>
             <div class="sort-box">
               <ul>
                 <li>
@@ -150,12 +152,10 @@
               </div>
               <div class="sample-info">
                 <a href="#">
-                  <h2>sedona</h2>
+                  <h2 class="name-sample">sedona</h2>
                 </a>
                 <span class="info">Информационный сайт<br> для туристов</span>
-                <span class="bay">
-                  <a href="#">9 900 руб.</a>
-                </span>
+                <a class=" btn bay" href="#">9 900 руб.</a>
               </div>
             </div>
             <div class="sample">
@@ -167,9 +167,7 @@
                   <h2>pink app</h2>
                 </a>
                 <span class="info">Продуктовый лендинг приложения для iOS Android</span>
-                <span class="bay">
-                  <a href="#">9 900 руб.</a>
-                </span>
+                <a class=" btn bay" href="#">9 900 руб.</a>
               </div>
             </div>
             <div class="sample">
@@ -181,9 +179,7 @@
                   <h2>barbershop</h2>
                 </a>
                 <span class="info">Сайт салоны красоты.<br> Для мужчин, да.</span>
-                <span class="bay">
-                  <a href="#">9 900 руб.</a>
-                </span>
+                <a class=" btn bay" href="#">9 900 руб.</a>
               </div>
             </div>
             <div class="sample">
@@ -195,9 +191,7 @@
                   <h2>mishka</h2>
                 </a>
                 <span class="info">Интернет-магазин<br> вязаных игрушек</span>
-                <span class="bay">
-                  <a href="#">9 900 руб.</a>
-                </span>
+                <a class=" btn bay" href="#">9 900 руб.</a>
               </div>
             </div>
             <div class="sample">
@@ -209,9 +203,7 @@
                   <h2>a plus</h2>
                 </a>
                 <span class="info">Лендинг курсов повышения квалификации</span>
-                <span class="bay">
-                  <a href="#">9 900 руб.</a>
-                </span>
+                <a class=" btn bay" href="#">9 900 руб.</a>
               </div>
             </div>
             <div class="sample">
@@ -223,25 +215,23 @@
                   <h2>кваст</h2>
                 </a>
                 <span class="info">Промо сайт производителя картофельного кваса</span>
-                <span class="bay">
-                  <a href="#">9 900 руб.</a>
-                </span>
+                <a class=" btn bay" href="#">9 900 руб.</a>
               </div>
             </div>
           </div>
           <div class="pages">
             <ul>
               <li>
-                <a class="active" href="#">1</a>
+                <a class="btn active" href="#">1</a>
               </li>
               <li>
-                <a href="#">2</a>
+                <a class="btn" href="#">2</a>
               </li>
               <li>
-                <a href="#">3</a>
+                <a class="btn" href="#">3</a>
               </li>
               <li>
-                <a class="next" href="#">следующая</a>
+                <a class="btn next" href="#">следующая</a>
               </li>
             </ul>
           </div>
@@ -256,9 +246,7 @@
           <p class="address">191186, Санкт-Петербург,<br>
              ул. Б. Конюшенная, д. 19/8</p>
           <p class="phone">тел. +7 (812)275-75-75</p>
-          <span class="write">
-            <a href="#">Напишите нам</a>
-          </span>
+          <a class="btn write" href="#">Напишите нам</a>
         </div>
         <div class="logo-3">
           <img src="img/marker-map.png" width="231" height="190" alt="">
@@ -273,7 +261,7 @@
           <a class="social-btn social-1-inst" href="#">Инстаграм</a>
         </div>
         <div class="social-2">
-          <p class="social-2-slogan">Давайте дружить,это выгодно!</p>
+          <p class="social-2-slogan">Давайте дружить, это выгодно!</p>
           <p class="social-2-desc">Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </div>
