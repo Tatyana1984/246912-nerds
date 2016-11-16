@@ -223,8 +223,8 @@ h2 {
 }
 
 .slide-title {
-  margin-top: 80px;
-  margin-bottom: 30px;
+  margin-top: 78px;
+  margin-bottom: 28px;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -374,7 +374,7 @@ h2 {
 
 .third-section {
   margin-top: 40px;
-  margin-bottom: 45px;
+  margin-bottom: 50px;
 }
 
 .left-content {
@@ -403,7 +403,7 @@ b {
   font-weight: 700;
   margin: 0;
   padding: 0;
-  margin-bottom: 26px;
+  margin-bottom: 23px;
   text-transform: uppercase;
 }
 
@@ -419,7 +419,7 @@ b {
   margin: 0;
   padding: 0;
   padding-left: 37px;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .item li:last-child {
@@ -493,7 +493,9 @@ sup {
   display: block;
   float: left;
   margin-right: 40px;
-  padding: 52px 30px;
+  padding: 0 30px;
+  padding-top: 60px;
+  padding-bottom: 48px;
 }
 
 .btn-barbershop {
@@ -501,7 +503,9 @@ sup {
   display: block;
   float: left;
   margin-right: 40px;
-  padding: 42px 26px;
+  padding: 0 26px;  
+  padding-top: 46px;
+  padding-bottom: 42px;
 }
 
 .btn-pink {
@@ -509,13 +513,17 @@ sup {
   display: block;
   float: left;
   margin-right: 40px;
-  padding: 59px 38px;
+  padding: 0 38px;
+  padding-top: 63px;
+  padding-bottom: 59px;
 }
 
 .btn-mishka {
   display: block;
   float: left;
-  padding: 43px 43px;
+  padding: 0 43px;
+  padding-top: 52px;
+  padding-bottom: 38px;
 }
 
 .btn-htmlacademy::after,
@@ -553,7 +561,6 @@ sup {
 
 .bottom-section {
   position: relative;
-
 }
 
 .map {
@@ -604,8 +611,9 @@ sup {
   margin-top: 35px;
 }
 
-.write:active {
-  box-shadow: inset 0 0 0 0;
+.write:hover {
+  background: #e74246;
+  color: #e26f72;
 }
 
 .logo-3 {
@@ -1162,3 +1170,101 @@ sup {
   font-size: 16px;
   line-height: 22px;
 }
+
+/* Всплывающее окно
+
+.modal-content {
+  position: absolute;
+  top: -140px;
+  left: 100px;
+  width: 760px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 67px;
+  padding-bottom: 85px;
+  color: #000000;
+  background: #ffffff;
+  box-shadow: 0px 20px 50px 5px rgba(0,0,0,0.75);
+  
+}
+
+.close {
+  position: absolute;
+  left: 849px;
+  top: 78px;
+  width: 21px;
+  height: 21px;
+  font-size: 0;
+  background: #ffffff;
+  border: 0;
+  cursor: pointer;
+}
+
+.close::before,
+.close::after {
+  position: absolute;
+  content: "";
+  width: 23px;
+  height: 5px;
+  top: 10px;
+  left: 0;
+  background: #fecccd;
+}
+
+.close::before {
+  transform: rotate(45deg);
+}
+
+.close::after {
+  transform: rotate(-45deg);
+}
+
+.model-content-title {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 43px;
+}
+
+.left-column {
+  float:left;
+  width: 360px;
+  margin-right: 40px;
+}
+
+.right-column {
+  float: right;
+  width: 360px;
+  margin-bottom: 35px;
+}
+
+.letter {
+  clear: both;
+  width: 100%;
+  
+  outline: 1px solid black;
+}
+
+.left-column label,
+.right-column label {
+  display: block;  
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  margin-bottom: 7px;
+  
+}
+
+.left-column input,
+.right-column input {
+  display: block;
+  width: 332px;
+  padding: 14px;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Roboto";
+  border: 2px solid #d7dcde;
+  border-radius: 2px;
+}
+*/
