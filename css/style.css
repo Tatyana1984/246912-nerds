@@ -197,7 +197,7 @@ h2 {
   display:inline-block;
   width: 4px;
   height: 4px;
-  margin: 0 10px;
+  margin: 0 12px;
   margin-top: 5px;
   background: white;
   box-shadow: 0 0 0 5px white;
@@ -265,7 +265,7 @@ h2 {
 
 .info-btn:active {
   background: #d7373b;
-  color: #e37376;
+  color: #e48789;
 }
 
 .slide:nth-child(1) {
@@ -343,7 +343,7 @@ h2 {
 
 .red:active {
   background: #d7373b;
-  color: #e37376;
+  color: #e48789;
 }
 
 .green {
@@ -374,7 +374,7 @@ h2 {
 
 .third-section {
   margin-top: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 52px;
 }
 
 .left-content {
@@ -612,8 +612,12 @@ sup {
 }
 
 .write:hover {
-  background: #e74246;
-  color: #e26f72;
+  background: #e74246;  
+}
+
+.write:active {
+  background: #d7373b;
+  color: #e48789;
 }
 
 .logo-3 {
@@ -1150,7 +1154,9 @@ sup {
 .social-2 {
   float: left;
   width: 560px;
-  padding: 70px 0;
+  
+  padding-top: 65px;
+  padding-bottom: 75px;
 }
 
 .social-2-slogan {
@@ -1171,21 +1177,21 @@ sup {
   line-height: 22px;
 }
 
-/* Всплывающее окно
+/* Всплывающее окно*/
 
 .modal-content {
   position: absolute;
   top: -140px;
   left: 100px;
+  z-index: 1;
   width: 760px;
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 67px;
-  padding-bottom: 85px;
+  padding-bottom: 84px;
   color: #000000;
   background: #ffffff;
   box-shadow: 0px 20px 50px 5px rgba(0,0,0,0.75);
-  
 }
 
 .close {
@@ -1204,11 +1210,11 @@ sup {
 .close::after {
   position: absolute;
   content: "";
-  width: 23px;
+  width: 22px;
   height: 5px;
   top: 10px;
   left: 0;
-  background: #fecccd;
+  background: #fecccd;  
 }
 
 .close::before {
@@ -1217,6 +1223,16 @@ sup {
 
 .close::after {
   transform: rotate(-45deg);
+}
+
+.close:hover::before,
+.close:hover::after {
+  background: #fb565a;
+}
+
+.close:active::before,
+.close:active::after {
+  background: #ffeeee;
 }
 
 .model-content-title {
@@ -1236,14 +1252,20 @@ sup {
 .right-column {
   float: right;
   width: 360px;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 }
 
 .letter {
   clear: both;
   width: 100%;
-  
-  outline: 1px solid black;
+}
+
+.letter p {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 8px;
 }
 
 .left-column label,
@@ -1257,14 +1279,65 @@ sup {
 }
 
 .left-column input,
-.right-column input {
+.right-column input,
+.letter textarea {   
   display: block;
-  width: 332px;
-  padding: 14px;
+  width: 328px;  
+  padding: 15px 0;
+  padding-left: 14px;
+  padding-right: 14px;
   font-size: 16px;
   line-height: 18px;
-  font-family: "Roboto";
+  font-family: "Roboto";  
   border: 2px solid #d7dcde;
   border-radius: 2px;
 }
-*/
+
+.left-column input[type="text"]:hover,
+.right-column input[type="email"]:hover,
+.letter textarea:hover {
+  border: 2px solid #b4b9bb; 
+}
+
+.left-column input[type="text"]:focus,
+.right-column input[type="email"]:focus,
+.letter textarea:focus {
+  border: 2px solid #000000;
+  color: #000000;
+  outline: none;
+}
+
+input[type="email"]:invalid,
+input[type="text"]:invalid {
+  border: 2px solid #e74246;
+  color: #e74246;
+}
+
+input[type="email"]:invalid:hover,
+input[type="text"]:invalid:hover {
+  border: 2px solid #e74246;
+  color: #e74246; 
+}
+
+.letter textarea {
+  width: 728px;
+  padding: 12px 14px;
+  resize: none;
+  margin-bottom: 47px;
+}
+
+.send {
+   border: none;
+   font-family: "Roboto";
+   padding-left: 84px;
+   padding-right: 84px;
+}
+
+.send:hover {
+  background: #e74246;
+}
+
+.send:active {
+  background: #d7373b;
+  color: #e48789;
+}
