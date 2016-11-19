@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">    
   </head>
   <body>
     <header class="header">
@@ -239,12 +239,14 @@
       </div>     
     </main>
     <div class="bottom-section">
-      <div class="map"></div>
-        <div class="wrapper container">  
-          <div class="contacts">
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.204376584248!2d30.317005211708356!3d59.939043473823325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca77c663%3A0xe2913435672b14c9!2s21Shop!5e0!3m2!1sru!2sru!4v1479552887689" width="1440" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div class="wrapper container">  
+        <div class="contacts">
           <p class="title">Nёrds design studio</p>
           <p class="address">191186, Санкт-Петербург,<br>
-             ул. Б. Конюшенная, д. 19/8</p>
+           ул. Б. Конюшенная, д. 19/8</p>
           <p class="phone">тел. +7 (812) 275-75-75</p>
           <a class="btn write" href="#">Напишите нам</a>
         </div>
@@ -257,21 +259,21 @@
           <form class="login-form" action="#" method="post">
             <div class="left-column">
               <label for="login-faled">Ваше имя</label>
-              <input type="text" name="login" id="login-faled" placeholder="Представьтесь, пожалуйста">
+              <input class="input" type="text" name="login" id="login-faled" placeholder="Представьтесь, пожалуйста">
             </div>
             <div class="right-column">
               <label for="email-faled">Ваш e-mail:</label>
-              <input type="email" name="email" id="email-faled" placeholder="Для отправки ответа">
+              <input class="input" type="email" name="email" id="email-faled" placeholder="Для отправки ответа">
             </div>
             <div class="letter">
               <p>Текст письма:</p>              
-              <textarea name="letter" rows="5" placeholder="В свободной форме"></textarea>
+              <textarea class="input" name="letter" rows="5" placeholder="В свободной форме"></textarea>
             </div> 
             <button class="btn send" type="submit">Отправить</button>
           </form>
         </div>
       </div>
-    </div>    
+    </div>   
     <footer class="footer">
       <div class="container clearfix">
         <div class="social-1">
@@ -285,5 +287,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script> 
   </body>
 </html>
