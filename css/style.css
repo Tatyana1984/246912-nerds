@@ -439,7 +439,7 @@ b {
 
 .box-title {
   display: block;
-  margin: 0 0 50px;
+  margin: 0 0 44px;
   padding: 0;
   text-align: center;  
   font-weight: 700;
@@ -451,6 +451,8 @@ b {
   float: left;
   width: 110px;
   margin-right: 10px;
+  padding-top: 6px;
+  overflow: hidden;  
 }
 
 .rate {
@@ -458,7 +460,7 @@ b {
   font-size: 45px;
   font-weight: 700;
   margin: 0 0 30px;
-  color: #000000;
+  color: #000000; 
 }
 
 sup {
@@ -469,7 +471,7 @@ sup {
 
 .facts {
   display: block;  
-  line-height: 18px;
+  line-height: 18px;  
 }
 
 .fourth-section {
@@ -530,7 +532,7 @@ sup {
 .map {
   position: relative;
   width: 100%;
-  background: url("../img/map.jpg") no-repeat;
+  background: #f1efe8 url("../img/map.jpg") no-repeat;
   min-height: 416px;
   background-position: center;
  }
